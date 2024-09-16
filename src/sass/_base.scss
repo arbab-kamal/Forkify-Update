@@ -69,3 +69,18 @@ body {
     border-radius: 0;
   }
 }
+@media (max-width: 768px) {
+  .container {
+    grid-template-rows: auto auto; /* Adjust row sizes */
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-areas:
+      'head'
+      'recipe'; /* Stack the elements vertically */
+
+    width: 100%;
+    min-height: auto; /* Adjust height for smaller screens */
+    box-shadow: none; /* Remove shadow for a cleaner look */
+    border-radius: 0; /* Remove border radius */
+    margin: 0; /* Remove margin */
+  }
+}
